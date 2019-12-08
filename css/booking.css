@@ -14,7 +14,7 @@ html{
 }
 .reser-cont{
   background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
+  position: fixed;
   left:0;
   top:0;
   width: 100vw;
