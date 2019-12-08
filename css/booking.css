@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
+
+html{
+  box-sizing: border-box;
+  font-family: 'Sulphur Point', sans-serif;
+}
+
+*,*::before, *::after{
+  box-sizing: inherit;
+}
+
+.errorMsg{
+  color: red;
+}
+.reser-cont{
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+}
+.show-booking{
+  opacity: 1;
+  visibility: hidden;
+  -webkit-transition:  visibility 0s, opacity 1s; 
+  transition: visibility 0s, opacity 1s;
+}
+
+#BookTable{
+  box-shadow: 5px 0px 15px 3px rgba(0,0,0,0.49);
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 5em;
+  border: 10px solid #FB8C94;
+  width: 40%;
+  height: 100vh;
+  background: #c1e8dc;
+
+}
+
+h1,h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+h1{
+  padding: 1em;
+}
+.dot{
+  display: flex;
+  align-items: center;
+  align-self: auto;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  margin: 0 auto;
+  transition: color .3s ease,background-color .3s ease; 
+
+}
+
+.carosel{
+  text-align: center;
+  margin: 0 5% 2em 5%;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  
+}
+
+.carosel::after{
+  content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 3px;
+    width: 70%;
+    background: #ffff;
+    margin: auto 15%;
+    z-index: 0;
+}
+#restaurantDetails{
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+#restaurantDetails div:nth-child(n){
+  flex: 1 0 0;
+  padding: 1em;
+} 
+#restaurantDetails div:nth-child(3n){
+  flex: 3 0 0;
+  padding: 1em;
+} 
+
+#restaurantDetails div:first-child{
+  flex: 1 0 100%;
+}
+#restaurantDetails div:last-child{
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+.customerInput{
+  display: block;
+  width: 100%;
+  height: 3em;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+
+}
+
+
+.Det-s{
+  display: flex;
+  flex-flow: row wrap;
+}
+.Det-s *:nth-child(n){
+  flex: 1 0 0;
+}
+
+
+#reservationDetails p{
+  font-size: 1.2em;
+}
+
+#reservationDetails{
+  position: relative;
+  border: 1px solid green;
+  padding: 1em;
+}
+
+
+
+#customerDetails{
+  display: flex;
+  flex-flow: row wrap;
+}
+#customerDetails div{
+  flex: 1 0 50%;
+  padding: 1em;
+}
+#BtnCustDet{
+  margin: auto;
+}
+
+#restaurantDetailsSummary{
+  border-top: 2px solid #7e94a9;
+  border-bottom: 2px solid #7e94a9;
+  padding: 1em 0;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: 600;
+}
+#restaurantDetailsSummary span{
+  display: block;
+  font-weight: 400;
+}
+#restaurantDetailsSummary div{
+  flex: 1 0 0;
+  text-align: center;
+}
+/* button{
+  background-color: rgba(255, 255, 255, 1);
+  border: solid rgba(112, 111, 111, 1) 0px;
+  cursor: pointer !important;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+button:hover{
+  background-color: #8CDDD8;
+} */
+
+
+.BtnBooking{
+  display: inline-block;
+  position: relative;
+  border: none;
+  color: #ffff;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 2em;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.2s linear;
+}
+.BtnBooking span{
+  display: block;
+  padding:  1em;
+  
+
+}
+.BtnBooking::before, .BtnBooking::after{
+  content:"";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #FFAAA5;
+}
+
+span::before, span::after{
+  content:"";
+  width:3px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #FFAAA5;
+}
+.BtnBooking:hover::before, .BtnBooking:hover::after{
+  width: 100%;
+}
+.BtnBooking:hover span::before, .BtnBooking:hover span::after{
+  height: 100%;
+}
+
+.BtnBooking::before, .BtnBooking::after{
+  transition-delay: 0.2s;
+}
+.BtnBooking span::before, .BtnBooking span::after{
+  transition-delay: 0s;
+}
+.BtnBooking::before{
+  right: 0;
+  top: 0;
+}
+.BtnBooking::after{
+  left: 0;
+  bottom: 0;
+}
+.BtnBooking span::before{
+  left: 0;
+  top: 0;
+}
+.BtnBooking span::after{
+  right: 0;
+  bottom: 0;
+}
+.BtnBooking:hover::before, .BtnBooking:hover::after{
+  transition-delay: 0s;
+}
+.BtnBooking:hover span::before, .BtnBooking:hover span::after{
+  transition-delay: 0.2s;
+} 
+.BtnBooking:hover{
+  color: #000000;
+
+}
+
+/*DATE TIME*/
+input[type="date"]{
+  display: -webkit-inline-flex;
+  font-family: monospace;
+  overflow: hidden;
+  padding: 0;
+  -webkit-padding-start: 1px;
+  
+}
+input::-webkit-datetime-edit {
+  -webkit-user-modify: read-only !important;
+  display: inline-block;
+  min-width: 0;
+  overflow: hidden;
+  
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+  -webkit-user-modify: read-only !important;
+  display: inline-block;
+  padding: 1px 0;
+}
+::-webkit-datetime-edit-text { padding: 0 1em; }
+::-webkit-datetime-edit-month-field { text-transform: uppercase; }
+::-webkit-datetime-edit-day-field { text-transform: uppercase; }
+::-webkit-datetime-edit-year-field { text-transform: uppercase; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: transparent;}
+
+
+figure img{
+  width: 100%;
+}
+
+figure{
+  width: 50%;
+}
+
+.bookEvents p{
+  padding: 1em;
+}
+.bookEvents{
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bookEvents figure, .bookEvents p{
+  flex: 1 0 0;
+}
+#main{
+  width: 50%;
+  margin:auto;
+  background: rgba(0, 0, 0, 0.2);
+  /* height: 100vh; */
+  padding: 1em;
+}
+.bookInfo>p{
+  padding: 0.5em 0;
+}
+#BookUs{
+  width: 50%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border: 1px solid #D19FBB;
+  background-color: #fff;
+  height: 3em;
+  color:rgb(207, 77, 151);/*#D19FBB; */
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.3em;
+  font-size: 1em;
+  
+}
+#BookUs:hover{
+  background-color:#FB8C94;
+  color: #ffff;
+}

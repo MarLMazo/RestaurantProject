@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
+
+html{
+  box-sizing: border-box;
+  font-family: 'Sulphur Point', sans-serif;
+  
+}
+
+*,*::before, *::after{
+  box-sizing: inherit;
+}
+
+
+.hidden{
+  position: absolute;
+  left: -10000px;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 0.2em;
+  font-size: 1.8em;
+  padding: 1em;
+  font-weight: bolder;
+}
+
+
+span+ ul{
+  margin-left: 2em;
+  position: relative;
+  
+}
+
+.main-content span{
+  cursor: pointer;
+}
+.iconfolder::before{
+  color: 	#D3D5EB;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f07b";
+  position: relative;
+
+ 
+ 
+}
+.iconOpenfolder::before{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f07c";
+  color: #A8E6CD;
+ 
+}
+/* ul{
+  left:0;
+  transition: left 1s linear;
+} */
+/* .iconOpenfolder::after{
+
+  content:".......";
+  display: block;
+  position: absolute;
+  z-index:-10;
+
+} */
+ul > li::before{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  /* content: "\f142 \f141"; */
+  content:"\f3bf";
+  position: absolute;
+  /* font-size: 12px; */
+  margin-left: -30px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+#main{
+  font-size: 1.5em;
+  display: flex;
+  flex: row wrap;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(243, 243, 245, 1);
+  height: 80vh;
+}
+.main-content, .details{
+  flex: 1 0 0;
+  /* border: 1px solid black; */
+}
+.main-content{
+  padding: 2em;
+  
+ 
+
+}
+.descrip{
+ padding: 1em;
+ 
+
+}
+h2{
+  text-align: center;
+  font-weight: 700;
+  padding: 1em;
+}
+.descrip a{
+  display: block;
+  margin-top: 1em;
+}
+.details{
+  align-items: center;
+}
+.details span{
+  font-weight: 700;
+}
