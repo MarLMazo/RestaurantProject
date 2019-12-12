@@ -1,0 +1,191 @@
+/** CAROUSEL **/
+.carousel{
+    max-width: 1200px;
+    height:50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position:relative;
+}
+
+.carousel-slide{
+    width:100%;   
+    display:flex; 
+}
+
+.item{
+    width:100%;
+    height:100%;
+}
+.carousel-controls{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-controls:hover{
+    background-color: black;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#prev{
+    width:10%;
+    height:100%;
+    position:absolute;
+    z-index:10;
+    left:0.5px;
+    color:black;
+    opacity:0.4;
+    font-weight:bold;
+}
+#next{
+    width:10%;
+    height:100%;
+    position:absolute;
+    z-index:10;
+    right:0.5px;
+    color:black;
+    opacity: 0.4;
+    font-weight:bold;
+}
+
+
+/*best seller css*/
+.best_seller {
+    padding-top: 1em;
+    max-width:1200px;
+    margin:0 auto;
+    background: #FFD3B5;
+}
+
+.flex-container-best-seller {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    font-family: 'Courgette',cursive;
+    background: #FFD3B5;
+    height: 374px;
+}
+
+.best_seller h2 {
+    font-family: 'Courgette',sens-serif;
+    text-align: center;
+}
+
+.best_seller p {
+    font-family: 'Raleway',sens-serif;
+    text-align: center;
+}
+
+[id^="section-"] {
+    flex: 1 0 0;
+    max-height: 25.7%;
+    text-align: center;
+}
+
+.best_sellers_images {
+    width: 300px;
+}
+
+.details {
+    text-align: center;
+}
+
+/* Social Media*/
+
+.bakerySocial {
+    padding: 1em;
+    background-color: #D0ECC5;
+}
+
+.socialmedia {
+    padding: 1em;
+    margin:auto;
+    text-align: center;
+}
+
+.social {
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+}
+
+.social-img-wrap {
+    border: 1px solid #000;
+    height: 300px;
+    width:300px;
+    overflow: hidden;
+}
+
+.social img {
+    height: 100%;
+}
+
+.social-descrp {
+    position: absolute;
+    top: -1000%;
+    padding: 1em;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.social-descrp span {
+    padding-right: 0.5em;
+}
+
+.social:hover .social-descrp {
+    top: 50%;
+}
+
+.social:hover img {
+    opacity: 0.3;
+}
+
+.list-comments::before {
+    content: "\f075";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: gray;
+}
+
+.like-comments::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: red;
+}
+
+.social-comment span {
+    font-weight: 600;
+}
+
+.social-tags {
+    padding: 0.5em 0;
+}
+
+
+
+.bakerySocial h2 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}	
+
+img[src="images/muffins.png"]{
+	transform: translateX(-40%);
+}
+
+.carousel a{
+    text-decoration: none;
+    display: block;
+    width: 10em;
+    height: 3em;
+    background: #4E9CAF;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}

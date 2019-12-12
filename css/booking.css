@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
 
-html{
-  box-sizing: border-box;
+/** RESET **/
+ol, ul, li {
+	list-style: none;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration: none;
+	color:initial;
+}
+/*************/
+
+.reser-cont, #main{
   font-family: 'Sulphur Point', sans-serif;
 }
-
-*,*::before, *::after{
-  box-sizing: inherit;
-}
-
 .errorMsg{
   color: red;
 }
@@ -48,6 +57,9 @@ h1,h2{
 }
 h1{
   padding: 1em;
+  background-color: rgba(0,0,0,0.4);
+  width: 60%;
+  margin: 0 auto;
 }
 .dot{
   display: flex;
@@ -141,7 +153,8 @@ h1{
 
 #reservationDetails{
   position: relative;
-  border: 1px solid green;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   padding: 1em;
 }
 
@@ -175,17 +188,6 @@ h1{
   flex: 1 0 0;
   text-align: center;
 }
-/* button{
-  background-color: rgba(255, 255, 255, 1);
-  border: solid rgba(112, 111, 111, 1) 0px;
-  cursor: pointer !important;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-}
-
-button:hover{
-  background-color: #8CDDD8;
-} */
-
 
 .BtnBooking{
   display: inline-block;
@@ -283,6 +285,7 @@ input::-webkit-datetime-edit-fields-wrapper {
   display: inline-block;
   padding: 1px 0;
 }
+
 ::-webkit-datetime-edit-text { padding: 0 1em; }
 ::-webkit-datetime-edit-month-field { text-transform: uppercase; }
 ::-webkit-datetime-edit-day-field { text-transform: uppercase; }
@@ -297,13 +300,14 @@ figure img{
 
 figure{
   width: 50%;
+  margin: auto 0;
 }
 
 .bookEvents p{
   padding: 1em;
 }
 .bookEvents{
-  padding: 1em;
+  padding: 1em 0;
   display: flex;
   flex-flow: row wrap;
 }
@@ -313,8 +317,8 @@ figure{
 }
 #main{
   width: 50%;
-  margin:auto;
-  background: rgba(0, 0, 0, 0.2);
+  margin:1em auto;
+  background: rgb(255, 211, 181, 0.6);
   /* height: 100vh; */
   padding: 1em;
 }

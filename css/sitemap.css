@@ -1,16 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat|Raleway|Sulphur+Point&display=swap');
 
-html{
-  box-sizing: border-box;
-  font-family: 'Sulphur Point', sans-serif;
+/** RESET CSS**/
+ol, ul, li {
+  list-style: none;
   
 }
 
-*,*::before, *::after{
-  box-sizing: inherit;
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration: none;
+	color:initial;
 }
 
+main ul, main li{
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
 
+/*************/
+
+#main{
+  font-family: 'Sulphur Point', sans-serif;
+  margin: 2em;
+  
+}
 .hidden{
   position: absolute;
   left: -10000px;
@@ -21,9 +39,14 @@ h1{
   text-transform: uppercase;
   font-family: 'Courgette', cursive;
   letter-spacing: 0.2em;
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 1em;
   font-weight: bolder;
+  background-color: rgba(0,0,0,0.4);
+  width: 60%;
+  margin: 0 auto;
+  transform: translateY(20px);
+
 }
 
 
@@ -37,7 +60,7 @@ span+ ul{
   cursor: pointer;
 }
 .iconfolder::before{
-  color: 	#D3D5EB;
+  color: 	rgb(0, 121, 158);;
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f07b";
@@ -50,7 +73,7 @@ span+ ul{
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f07c";
-  color: #A8E6CD;
+  color: #FF8C94
  
 }
 /* ul{
@@ -65,7 +88,7 @@ span+ ul{
   z-index:-10;
 
 } */
-ul > li::before{
+#main ul > li::before{
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   /* content: "\f142 \f141"; */
@@ -76,35 +99,36 @@ ul > li::before{
   display: inline-block;
   transform: rotate(90deg);
 }
-
 #main{
-  font-size: 1.5em;
+  width: 50%;
+  background-color: rgb(255, 211, 181, 0.6);
+  margin:1em auto;
+  border-radius:10px;
+}
+#main-section{
+
   display: flex;
   flex: row wrap;
-  width: 70%;
-  margin: auto;
-  background-color: rgba(243, 243, 245, 1);
   height: 80vh;
+  
+  margin-bottom: 1em;
 }
+
 .main-content, .details{
   flex: 1 0 0;
   /* border: 1px solid black; */
+  padding: 3em 0.5em;
+  margin: 1em;
+  font-size: 1.2em;
 }
-.main-content{
-  padding: 2em;
-  
- 
 
-}
-.descrip{
- padding: 1em;
- 
 
-}
 h2{
-  text-align: center;
+  /* text-align: center; */
   font-weight: 700;
-  padding: 1em;
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 .descrip a{
   display: block;
@@ -116,3 +140,15 @@ h2{
 .details span{
   font-weight: 700;
 }
+#main a{
+  color: #FF8C94;
+  font-style: italic;
+}
+#main a:hover{
+  text-decoration: underline;
+}
+/* h1{
+  background-color: rgba(0,0,0,0.6);
+  width: 60%;
+  margin: auto;
+} */

@@ -4,13 +4,28 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Book a Table</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
     <link rel="stylesheet" type="text/css" href="css/booking.css"/>
     
    
   
   </head>
   <body>
+    <header>
+        <div class="logo-wrap">
+            <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
+        </div>
+        <ul class="litem">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+        </ul>
+        <ul class="ritem">
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
     <main id="main">
       <h1>Book an Event with Us</h1>
       <div class="bookInfo">
@@ -21,14 +36,14 @@
       </div>
       <div class="bookEvents">
           <figure>
-              <img src="images/bakeryEvent.png" alt="Catering for the City Event"/>
+              <img src="images/BookingEvents/bakeryEvent.png" alt="Catering for the City Event"/>
               <figcaption>Source: Jeff Kurowski | March 16,2016</figcaption>
           </figure>
           <p>A successfull City Event. It was a pleasure for us to serve people who are serving our City. We served this amazing people the sweetest treat they can have.</p>
       </div>
       <div class="bookEvents">
         <figure>
-            <img src="images/bakeryEventWedding.png" alt="Wedding Event Catering"/>
+            <img src="images/BookingEvents/bakeryEventWedding.png" alt="Wedding Event Catering"/>
             <figcaption>Source: The Farm Bakery Events | 2017</figcaption>
         </figure>        
         <p>A great Wedding event of John and Marissa. All the best wishes for a happy marriage to the both of you from all our staffs.</p>
@@ -37,142 +52,192 @@
     </main>
    
     <div class="reser-cont show-booking">
-    <div id="BookTable">
-      <div class="carosel">
-        <span class="dot">1</span>
-        <span class="dot">2</span>
-        <span class="dot">3</span>
-      </div>
-      <div class="showForm">
-          <h2>Reservation</h2>       
-          <form id="restaurantDetails" name="restaurantDetails">
-            <div>
-              <label for="resReserv">Location*</label>
-              <!-- <input type="text" id="resReserv" name="resReserv" class="customerInput" placeholder="Enter Location"/> -->
-              <select id="resReserv" id="resReserv" name="resReserv" class="customerInput">
-                <option value="" disabled selected hidden>Enter a Location</option>
-                <option value="North York">North York</option>
-                <option value="Etobicoke">Etobicoke</option>
-                <option value="East York">East York</option>
-                <option value="Downtown">Downtown</option>
-                <option value="Niagara">Niagara</option>
-              </select>
-            </div>
-            <div>
-              <label for="numReserv">Guests*</label>
-              <select id="numReserv" class="customerInput">
-                <option value="" disabled selected hidden></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11"> 11</option>
-              </select>
-            </div>
-            <div>
-              <label for="dateReserv">Date*</label>
-              <input type="date" id="dateReserv" class="customerInput" placeholder="yyyy-mm-dd"/>
-            </div>
-            <div>
-              <label for="timeReserv">Time*</label>
-              <select id="timeReserv" class="customerInput">
+      <div id="BookTable">
+        <div class="carosel">
+          <span class="dot">1</span>
+          <span class="dot">2</span>
+          <span class="dot">3</span>
+        </div>
+        <div class="showForm">
+            <h2>Reservation</h2>       
+            <form id="restaurantDetails" name="restaurantDetails">
+              <div>
+                <label for="resReserv">Location*</label>
+                <!-- <input type="text" id="resReserv" name="resReserv" class="customerInput" placeholder="Enter Location"/> -->
+                <select id="resReserv" id="resReserv" name="resReserv" class="customerInput">
+                  <option value="" disabled selected hidden>Enter a Location</option>
+                  <option value="North York">North York</option>
+                  <option value="Etobicoke">Etobicoke</option>
+                  <option value="East York">East York</option>
+                  <option value="Downtown">Downtown</option>
+                  <option value="Niagara">Niagara</option>
+                </select>
+              </div>
+              <div>
+                <label for="numReserv">Guests*</label>
+                <select id="numReserv" class="customerInput">
                   <option value="" disabled selected hidden></option>
-                  <option value="11:00 am">11:00 am</option>
-                  <option value="11:30 am">11:30 am</option>
-                  <option value="12:00 pm">12:00 pm</option>
-                  <option value="12:30 pm">12:30 pm</option>
-                  <option value="1:00 pm">1:00 pm</option>
-                  <option value="1:30 pm">1:30 pm</option>
-                  <option value="2:00 pm">2:00 pm</option>
-                  <option value="2:30 pm">2:30 pm</option>
-                  <option value="3:00 pm">3:00 pm</option>
-                  <option value="3:30 pm">3:30 pm</option>
-                  <option value="4:00 pm">4:00 pm</option>
-                  <option value="4:30 pm">4:30 pm</option>
-                  <option value="5:00 pm">5:00 pm</option>
-                  <option value="5:30 pm">5:30 pm</option>
-                  <option value="6:00 pm">6:00 pm</option>
-                  <option value="6:30 pm">6:30 pm</option>
-                  <option value="7:00 pm">7:00 pm</option>
-                  <option value="7:30 pm">7:30 pm</option>
-                  <option value="8:00 pm">8:00 pm</option>
-                  <option value="8:30 pm">8:30 pm</option>
-                  <option value="9:00 pm">9:00 pm</option>
-                  <option value="9:30 pm">9:30 pm</option>
-                  <option value="10:00 pm">10:00 pm</option>
-                  <option value="10:30 pm">10:30 pm</option>
-                  <option value="11:00 pm">11:00 pm</option>
-                  <option value="11:30 pm">11:30 pm</option>
-                  <option value="12:00 am">12:00 am</option>
-              </select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11"> 11</option>
+                </select>
+              </div>
+              <div>
+                <label for="dateReserv">Date*</label>
+                <input type="date" id="dateReserv" class="customerInput" placeholder="yyyy-mm-dd"/>
+              </div>
+              <div>
+                <label for="timeReserv">Time*</label>
+                <select id="timeReserv" class="customerInput">
+                    <option value="" disabled selected hidden></option>
+                    <option value="11:00 am">11:00 am</option>
+                    <option value="11:30 am">11:30 am</option>
+                    <option value="12:00 pm">12:00 pm</option>
+                    <option value="12:30 pm">12:30 pm</option>
+                    <option value="1:00 pm">1:00 pm</option>
+                    <option value="1:30 pm">1:30 pm</option>
+                    <option value="2:00 pm">2:00 pm</option>
+                    <option value="2:30 pm">2:30 pm</option>
+                    <option value="3:00 pm">3:00 pm</option>
+                    <option value="3:30 pm">3:30 pm</option>
+                    <option value="4:00 pm">4:00 pm</option>
+                    <option value="4:30 pm">4:30 pm</option>
+                    <option value="5:00 pm">5:00 pm</option>
+                    <option value="5:30 pm">5:30 pm</option>
+                    <option value="6:00 pm">6:00 pm</option>
+                    <option value="6:30 pm">6:30 pm</option>
+                    <option value="7:00 pm">7:00 pm</option>
+                    <option value="7:30 pm">7:30 pm</option>
+                    <option value="8:00 pm">8:00 pm</option>
+                    <option value="8:30 pm">8:30 pm</option>
+                    <option value="9:00 pm">9:00 pm</option>
+                    <option value="9:30 pm">9:30 pm</option>
+                    <option value="10:00 pm">10:00 pm</option>
+                    <option value="10:30 pm">10:30 pm</option>
+                    <option value="11:00 pm">11:00 pm</option>
+                    <option value="11:30 pm">11:30 pm</option>
+                    <option value="12:00 am">12:00 am</option>
+                </select>
+              </div>
+              <div>
+                <button type="submit"id="BtnRestDet" class="BtnBooking"><span>Find a table</span></button>
+              </div>           
+            </form>
+          <div>
+            <h3> Group Reservation/Catering</h3>
+            <p>To make a reservation for a party of 12 or more people and Catering Services, please contact your local bakery</p>
+          </div>
+        </div>
+        <div class="showForm">
+          <div class="Det-s">
+            <!-- <div id="map">        
+            </div> -->
+            <div id="reservationDetails">
+              
+                <p></p>
+                <button id="BtnConfirmDet" class="BtnBooking"><span>Make a Reservation</span></button>
+                
+            </div>
+          </div>
+        </div>
+        <div class="showForm">
+          <div id="restaurantDetailsSummary">
+            
+          </div>
+          <form id="customerDetails" >
+            <div>
+              <label for="fnameCustomer">First Name*</label><span class="errorMsg">Invalid Name</span>
+              <input type="text" id="fnameCustomer" class="customerInput"/>
             </div>
             <div>
-              <button type="submit"id="BtnRestDet" class="BtnBooking"><span>Find a table</span></button>
-            </div>           
-          </form>
-        <div>
-          <h3> Group Reservation/Catering</h3>
-          <p>To make a reservation for a party of 12 or more people and Catering Services, please contact your local bakery</p>
-        </div>
-      </div>
-      <div class="showForm">
-        <div class="Det-s">
-          <!-- <div id="map">        
-          </div> -->
-          <div id="reservationDetails">
+              <label for="lnameCustomer">Last Name*</label><span class="errorMsg">Invalid Name</span>
+              <input type="text" id="lnameCustomer" class="customerInput"/>
+            </div>
+            <div>
+              <label for="phoneCustomer">Phone*</label><span class="errorMsg">Invalid Phone</span>
+              <input type="text" id="phoneCustomer" class="customerInput"/>
+            </div>
+            <div>
+              <label for="emailCustomer">Email*</label><span class="errorMsg">Invalid Email</span>
+              <input type="text" id="emailCustomer" class="customerInput"/>
+            </div>
+            <div>
+              <label for="eventOccasion">Occasion</label>
+              <input type="text" id="eventOccasion" class="customerInput"/>
+            </div>
+            <div>
+              <label for="eventRequest">Special Request</label>
+              <input type="text" id="eventRequest" class="customerInput"/>
+            </div>
             
-              <p></p>
-              <button id="BtnConfirmDet" class="BtnBooking"><span>Make a Reservation</span></button>
-               
-          </div>
+            <button type="submit" id="BtnCustDet" class="BtnBooking"><span>Complete Reservation</span></button>
+          </form>      
+        </div>
+        
+        <div class="showForm">
+          <div id="reservationSummary"></div>
+        </div>
+        <button id="BtngoBack" class="BtnBooking"><span>Go Back</span></button>   
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_main">
+        <section id="section-1">
+            <ul>
+                <li class="col_head">Shop</li>
+                <li><a>Home</a></li>
+                <li>Menu</li>
+                <li><a>Visit Us</a></li>
+                <li><a>Careers</a></li>
+            </ul>
+        </section>
+        <section id="section-2">
+            <ul>
+                <li class="col_head">We are available</li>
+                <li>Mon-Friday : 8am - 8pm</li>
+                <li>Saturday : 8am - 7pm</li>
+                <li>Sunday : 9am - 6pm</li>
+                <li>Holiday hours may vary.!</li>
+            </ul>
+        </section>
+        <section id="section-3">
+            <ul>
+                <li class="col_head">Visit Us</li>
+                <li>#123 Jump Street,</li>
+                <li>Toronto, ON, A1A 1A1</li>
+                <li>contactus@bakedexplosion.com</li>
+                <li>+1(123)456-7890</li>
+            </ul>
+        </section>
+        <section id="section-4">
+            <form>
+                <ul>
+                    <li class="col_head"><label>STAY UPDATED</label></li>
+                    <li><input type="email" placeholder="Email Address" /></li>
+                    <li><button type="submit">SUBSCRIBE NOW</button></li>
+                </ul>
+            </form>
+        </section>
+      </div>
+      <div id="last_row">
+        <p>&copy; 2019 by Baked Explosion and team</p>
+        <div id="smedia_icons">
+            <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+            <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+            <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+            <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
         </div>
       </div>
-      <div class="showForm">
-        <div id="restaurantDetailsSummary">
-          
-        </div>
-        <form id="customerDetails" >
-          <div>
-            <label for="fnameCustomer">First Name*</label><span class="errorMsg">Invalid Name</span>
-            <input type="text" id="fnameCustomer" class="customerInput"/>
-          </div>
-          <div>
-            <label for="lnameCustomer">Last Name*</label><span class="errorMsg">Invalid Name</span>
-            <input type="text" id="lnameCustomer" class="customerInput"/>
-          </div>
-          <div>
-            <label for="phoneCustomer">Phone*</label><span class="errorMsg">Invalid Phone</span>
-            <input type="text" id="phoneCustomer" class="customerInput"/>
-          </div>
-          <div>
-            <label for="emailCustomer">Email*</label><span class="errorMsg">Invalid Email</span>
-            <input type="text" id="emailCustomer" class="customerInput"/>
-          </div>
-          <div>
-            <label for="eventOccasion">Occasion</label>
-            <input type="text" id="eventOccasion" class="customerInput"/>
-          </div>
-          <div>
-            <label for="eventRequest">Special Request</label>
-            <input type="text" id="eventRequest" class="customerInput"/>
-          </div>
-          
-          <button type="submit" id="BtnCustDet" class="BtnBooking"><span>Complete Reservation</span></button>
-        </form>      
-      </div>
-      
-      <div class="showForm">
-        <div id="reservationSummary"></div>
-      </div>
-      <button id="BtngoBack" class="BtnBooking"><span>Go Back</span></button>   
-    </div>
-    </div>
+    </footer>
         
         <script src="js/booking.js"></script>
      

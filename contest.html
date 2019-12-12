@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tic-tac-toe</title>
+        <link rel="stylesheet" type="text/css" href="css/contest.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-container">
+            <header>
+                <!-- todo -->
+            </header>
+            <nav>
+                <!-- todo -->
+            </nav>
+            <section id="game-container">
+                <h1>Tic-tac-toe</h1>
+                <div id="game-board">   
+                    <div id="row-1">
+                        <div class="box-1" id="1" onclick="checkClick('1');"></div>
+                        <div class="box-2" id="2" onclick="checkClick('2');"></div>
+                        <div class="box-1" id="3" onclick="checkClick('3');"></div>
+                    </div>
+                    <div id="row-2">
+                        <div class="box-2" id="4" onclick="checkClick('4');"></div>
+                        <div class="box-1" id="5" onclick="checkClick('5');"></div>
+                        <div class="box-2" id="6" onclick="checkClick('6');"></div>
+                    </div>
+                    <div id="row-3">
+                        <div class="box-1" id="7" onclick="checkClick('7');"></div>
+                        <div class="box-2" id="8" onclick="checkClick('8');"></div>
+                        <div class="box-1" id="9" onclick="checkClick('9');"></div>
+                    </div>
+                </div>
+                <div>
+                    <button id="reset-button" type="button">Reset</button>
+                </div>
+                <div id="game_result">
+                </div>
+            </section>
+            <footer>
+                <!--todo -->
+            </footer>
+        </div>
+        <script src="js/contest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Kurale|Montserrat|Raleway|Sulphur+Point&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>BakedExplosion</title>
+    <script src="https://kit.fontawesome.com/150aec7788.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <img id="logo" src="images/logo.png" alt="logo of Baked Explosion." />
+        </div>
+        <ul class="litem">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+        </ul>
+        <ul class="ritem">
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="carousel">
+            <div id="prev" class="carousel-controls"><img src="images/prev_icon.png"></div>
+            <div id="next" class="carousel-controls"><img src="images/next_icon.png"></div> 
+            <div class="carousel-slide">
+                <img src="images/c3.png" class="item" id="lastclone">
+                <img src="images/c1.png" class="item">
+                <img src="images/c2.png" class="item">
+                <img src="images/c3.png" class="item">
+                <img src="images/c1.png" class="item" id="firstclone">
+            </div>
+            <a href="#" role="button">Show More</a>
+        </div>
+
+    </main>
+
+    <div class="best_seller">
+        <h2>Best Sellers</h2>
+        <p>These are our best seller items</p>
+        <div class="flex-container-best-seller">
+            <!-- Image Reference: <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a> -->
+            <section id="section-one">
+                <div class="best_seller_div">
+                    <img class="best_sellers_images" src="images/donut.jpg" alt="Image of donut" onmouseover="showDetails('div1');" onmouseout="hideDetails('div1');">
+                </div>
+                <div id="div1" class="details">
+                    <div>Donuts</div>
+                </div>
+            </section>
+            <section id="section-two">
+                <div class="best_seller_div">
+                    <img class="best_sellers_images" src="images/cupcake.jpg" alt="Image of cupcake" onmouseover="showDetails('div2');" onmouseout="hideDetails('div2');">
+                    <div id="div2" class="details">
+                        <div>Cupcakes</div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-three">
+                <div class="best_seller_div">
+                    <img class="best_sellers_images" src="images/croissant.jpg" alt="Image of croissant" onmouseover="showDetails('div3');" onmouseout="hideDetails('div3');">
+                    <div id="div3" class="details">
+                        <div>Croissants</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="bakerySocial">
+        <h2>Follow Us For More Treats</h2>
+        <div class="socialmedia ">
+
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/baked-macaroon.png" alt="baked macaroon figure" />
+                </div>
+                <div class="social-descrp">
+                    <div><span class="like-comments">100</span><span class="list-comments">23</span></div>
+                    <div class="social-tags">#foods #treats #macaroons #loveit</div>
+                    <div class="social-comment"><span>ManOftheYear</span>YummyLicious</div>
+                    <div class="social-comment"><span>Raise_lover</span>I dont mind eating this treat for the whole week!</div>
+                    <div class="social-comment"><span>Rect.Lime</span>What a food to have</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/coffeecroissant.png" alt="coffee croissant figure" />
+                </div>
+                <div class="social-descrp ">
+                    <div><span class="like-comments">10</span><span class="list-comments">15</span></div>
+                    <div class="social-tags">#croissantloveit #lovingtreats #sweetieBread</div>
+                    <div class="social-comment"><span>KiddieMan</span>yummmm</div>
+                    <div class="social-comment"><span>turki_orainy</span>hey!</div>
+                    <div class="social-comment"><span>FoodLover</span>Wow! I can stop thinking about this</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/cupcake.png" alt="cupcake figure" />
+                </div>
+                <div class="social-descrp ">
+                    <div><span class="like-comments">31</span><span class="list-comments">12</span></div>
+                    <div class="social-tags">#cupcakesTreat #LovingIt #SuperCupcakes</div>
+                    <div class="social-comment"><span>kidsInHell</span>Loving this food</div>
+                    <div class="social-comment"><span>turky_irony</span>hey!</div>
+                    <div class="social-comment"><span>Alicia_rose</span>Amazing!</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/muffins.png" alt="colorful muffins figure" />
+                </div>
+                <div class="social-descrp ">
+                    <div><span class="like-comments">120</span><span class="list-comments">30</span></div>
+                    <div class="social-tags">#muffins #treatsForLife #superSweetDelight</div>
+                    <div class="social-comment"><span>TurkeyMan</span>yummmmmy</div>
+                    <div class="social-comment"><span>ReverLoad</span>Thats insane food!</div>
+                    <div class="social-comment"><span>ahbudulisffus</span>Wow</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/fancycake.png" alt="different figure of cakes" />
+                </div>
+                <div class="social-descrp ">
+                    <div><span class="like-comments">703</span><span class="list-comments">132</span></div>
+                    <div class="social-tags">#cakes #cravingIsComing #superSweetDelight</div>
+                    <div class="social-comment"><span>DiabeticHero</span>Lots of sugar to my tummy!</div>
+                    <div class="social-comment"><span>80_Love</span>Food Craving!!</div>
+                    <div class="social-comment"><span>rhanduM</span>You don't expect something like this</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social-img-wrap">
+                    <img src="images/frosting.png" alt="frosting figure" />
+                </div>
+                <div class="social-descrp ">
+                    <div><span class="like-comments">47</span><span class="list-comments">21</span></div>
+                    <div class="social-tags">#frostingLove #SourCreamCraving</div>
+                    <div class="social-comment"><span>ChickenLover</span>I cannot wait to try it</div>
+                    <div class="social-comment"><span>ReverLoad</span>Thats insane food!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+
+    <footer>
+        <div class="footer_main">
+            <section id="section-1">
+                <ul>
+                    <li class="col_head">Shop</li>
+                    <li><a>Home</a></li>
+                    <li>Menu</li>
+                    <li><a>Visit Us</a></li>
+                    <li><a>Careers</a></li>
+                </ul>
+            </section>
+            <section id="section-2">
+                <ul>
+                    <li class="col_head">We are available</li>
+                    <li>Mon-Friday : 8am - 8pm</li>
+                    <li>Saturday : 8am - 7pm</li>
+                    <li>Sunday : 9am - 6pm</li>
+                    <li>Holiday hours may vary.!</li>
+                </ul>
+            </section>
+            <section id="section-3">
+                <ul>
+                    <li class="col_head">Visit Us</li>
+                    <li>#123 Jump Street,</li>
+                    <li>Toronto, ON, A1A 1A1</li>
+                    <li>contactus@bakedexplosion.com</li>
+                    <li>+1(123)456-7890</li>
+                </ul>
+            </section>
+            <section id="section-4">
+                <form>
+                    <ul>
+                        <li class="col_head"><label>STAY UPDATED</label></li>
+                        <li><input type="email" placeholder="Email Address" /></li>
+                        <li><button type="submit">SUBSCRIBE NOW</button></li>
+                    </ul>
+                </form>
+            </section>
+        </div>
+        <div id="last_row">
+            <p>&copy; 2019 by Baked Explosion and team</p>
+            <div id="smedia_icons">
+                <img src="images/social_media_icons/facebook.png" alt="facebook icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/instagram.png" alt="instagram icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/snapchat.png" alt="snapchat icon link to facebook account of baked explosions." />
+                <img src="images/social_media_icons/youtube.png" alt="youtube icon link to facebook account of baked explosions." />
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

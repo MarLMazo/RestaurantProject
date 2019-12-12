@@ -1,13 +1,8 @@
 
 function sitemap(){
 
-
-  var main= document.getElementsByClassName('main');
-  var second = document.getElementsByClassName('second')
-  var atag = document.querySelectorAll('a');
   var spanIcon= document.querySelectorAll('.main-content span');
   var descrip = document.getElementsByClassName('descrip')
-
 
 
   for(let i=0;i<spanIcon.length; i++){
