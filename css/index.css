@@ -95,6 +95,8 @@
 .bakerySocial {
     padding: 1em;
     background-color: #D0ECC5;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .socialmedia {
