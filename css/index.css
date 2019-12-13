@@ -111,8 +111,8 @@
 
 .social-img-wrap {
     border: 1px solid #000;
-    height: 300px;
-    width:300px;
+    height: 250px;
+    width:250px;
     overflow: hidden;
 }
 
@@ -123,7 +123,7 @@
 .social-descrp {
     position: absolute;
     top: -1000%;
-    padding: 1em;
+    padding: 0.5em;
     transform: translateY(-50%);
     text-align: left;
 }
